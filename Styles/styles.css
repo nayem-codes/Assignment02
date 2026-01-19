@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shared style */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+html{
+    color: white;
+}
+
+.btn{
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    border: none;
+    width: 135px;
+    height: 44px;
+    padding: 16px 12px;
+    border-radius: 1000px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 #00000054;
+}
+
+/* navbar style  */
+
+header {
+    background-color: #1A0B2E;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+/* banner section  */
+
+#banner{
+    background-image: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 760px;
+    justify-items: center;
+    position: relative;
+}
+
+.banner-container{
+    max-width: 550px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.circle{
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.microphone{
+    position: absolute;
+}
+
+/* #badge{
+    background-color: #00FF88;
+    padding: 16px 8px;
+    border-radius: 1000px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1A0B2E;
+    position: relative;
+    margin-left: 877px;
+    margin-top: 113px;
+} */
+
+.banner-content{
+    margin-top: 40px;
+    align-items: center;
+}
+
+.banner-content h1{
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.banner-button{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.banner-button .btn{
+    width: 201px;
+}
+
+.secondary-btn{
+    background-color: transparent;
+    padding: 20px 12px;
+    width: 147px;
+    height: 44px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00ff88;
+    border-radius: 10000px;
+    color: #00FF88;
+}

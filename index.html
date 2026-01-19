@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment02</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <link rel="stylesheet" href="./Styles/tailwind.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +13,47 @@
 </head>
 
 <body class="inter-font">
-    <header class="bg-blue-950">
-        <nav class="flex justify-between max-w-[1200px] w-[85%] m-auto items-center py-8">
-            <div>
+    <header>
+        <nav>
+            <div class="nav-logo">
                 <img src="./assets/TechWave.png" alt="">
             </div>
 
-            <ul class="flex gap-8 text-white">
+            <ul class="nav-menu">
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
             </ul>
 
             <div>
-                <button class="bg-gradient-to-tr from-yellow-300 to-purple-600 px-4 py-3 rounded-full font-semibold" >Subscribe</button>
-            </div>
+                <button class="btn">
+                    Subscribe <img src="./assets/ArrowRight.png" alt="">
+                </button>
+             </div>
         </nav>
+
+        <section id="banner">
+         <div class="banner-container">
+                   <div class="circle">
+                <img src="./assets/hero-circle.png" alt="">
+                <div class="microphone">
+                    <img src="./assets/microphone.png" alt="">
+                </div>
+            </div>
+            
+            <!-- <span id="badge">New</span> -->
+
+            <div class="banner-content">
+                <h1>TechWave</h1>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="banner-button">
+                <button class="btn"><img src="./assets/spotify.png" alt=""> Listen on Spotify</button>
+                <button class="secondary-btn"><img src="./assets/message.png   " alt="">Subscribe</button>
+                </div>
+            </div>
+         </div>
+        </section>
+
     </header>
 </body>
 </html>
