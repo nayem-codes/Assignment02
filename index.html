@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment02</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./Styles/tailwind.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="inter-font">
+    <header class="bg-blue-950">
+        <nav class="flex justify-between max-w-[1200px] w-[85%] m-auto items-center py-8">
+            <div>
+                <img src="./assets/TechWave.png" alt="">
+            </div>
+
+            <ul class="flex gap-8 text-white">
+                <li><a href="">About</a></li>
+                <li><a href="">Episodes</a></li>
+                <li><a href="">Host</a></li>
+            </ul>
+
+            <div>
+                <button class="bg-gradient-to-tr from-yellow-300 to-purple-600 px-4 py-3 rounded-full font-semibold" >Subscribe</button>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
