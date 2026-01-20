@@ -16,7 +16,7 @@ html{
     color: white;
 }
 
-.btn{
+.nav-btn{
     background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
     border: none;
     width: 135px;
@@ -61,6 +61,11 @@ nav {
     color: white;
     text-decoration: none;
     align-items: center;
+}
+
+#hamburger{
+    margin-right: 18px;
+    display: none;
 }
 
 /* banner section  */
@@ -125,8 +130,22 @@ nav {
     margin-top: 24px;
 }
 
-.banner-button .btn{
+.primary-btn{
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    border: none;
     width: 201px;
+    height: 44px;
+    padding: 16px 12px;
+    border-radius: 1000px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 #00000054;
 }
 
 .secondary-btn{
@@ -141,4 +160,128 @@ nav {
     border: 1px solid #00ff88;
     border-radius: 10000px;
     color: #00FF88;
+}
+
+/* about section  */
+
+#about{
+    background-color: #1A0B2E;
+}
+
+.about-content{
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.about-heading h2{
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.about-heading p{
+    margin-bottom: 160px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 120px;
+}
+
+.about-cards h2{
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+
+/* choose section  */
+
+#choose{
+    background-color: #230E3D;
+
+}
+
+#choose h2{
+    font-size: 48px;
+    padding-top: 120px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.choose-card{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.choose-card img{
+    margin-bottom: 16px;
+}
+
+.choose-card h4{
+    font-size: 24PX;
+    margin-bottom: 16px;
+}
+
+.long-layout{
+    grid-row: span 2;
+}
+
+.wide-layout{
+    grid-column: span 2;
+}
+
+.normal-layout{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.long-layout , .wide-layout , .normal-layout{
+    background-color: rgba(53, 17, 101, 0.4);
+    box-shadow: 0 4px 4px 0 #0000;
+    padding: 40px;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: start;
+}
+
+
+
+
+/* responsive section  */
+
+@media screen and (max-width: 576px) {
+    nav {
+    max-width: 400px;
+    }
+
+    #hamburger{
+        display: inline;
+    }
+
+    .nav-menu, .nav-btn{
+        display: none;
+    }
+
+    .banner-container{
+        width: 400px;
+    }
+    .circle{
+        width: 200PX;
+        
+    }
 }
