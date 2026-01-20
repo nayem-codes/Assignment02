@@ -204,7 +204,7 @@ nav {
 
 }
 
-#choose h2{
+#choose h2, #episodes h2, #host h2{
     font-size: 48px;
     padding-top: 120px;
     margin-bottom: 40px;
@@ -218,9 +218,6 @@ nav {
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 250px);
-    
-    justify-content: center;
-    align-items: center;
     padding-bottom: 120px;
 }
 
@@ -257,6 +254,161 @@ nav {
     flex-direction: column;
     justify-content: center; 
     align-items: start;
+}
+
+/* featured episodes section  */
+
+#episodes, #host{
+    background-color: #1A0B2E;
+}
+
+
+.episodes-card{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.episodes-card-content{
+    background-color: rgba(53, 17, 101, 0.4);
+    box-shadow: 0 4px 4px 0 #0000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.episodes-card-content iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.episodes-card h4{
+    margin-top: 24px;
+    font-size: 24px;
+}
+
+.episodes-card h4, .episodes-card p{
+    padding: 0 20px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.episodes-card span{
+    padding: 0 20px;
+    display: flex;
+    gap: 6px;
+    color: #00FF88;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* host section  */
+
+#host{
+    padding-top: 120px;
+}
+
+.host-container{
+    mar-bottom: 120px;
+}
+.host-card{
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: rgba(53, 17, 101, 0.4);
+    box-shadow: 0 4px 4px 0 #0000;
+    border-radius: 40px;
+}
+
+.host-content h4{
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.host-content p{
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.host-content .icons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.host-content .icons a{
+    gap: 8px;
+    border: 1px solid #533C72;
+    padding: 6px;
+    border-radius: 50%;   
+}
+
+.host-content .icons a img{
+    width: 20px;
+    height: 20px;
+}
+
+/* footer section  */
+
+footer{
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 412px;
+    justify-items: center;
+    position: relative;
+}
+
+
+.footer-container{    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo{
+    margin: 0 auto;
+    padding-top: 120px;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.footer-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.footer-icons .icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-container p{
+    
+    text-align: center;
 }
 
 
