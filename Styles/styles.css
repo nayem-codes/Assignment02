@@ -351,13 +351,8 @@ nav {
 
 /* host section  */
 
-#host{
-    padding-top: 120px;
-}
 
-.host-container{
-    mar-bottom: 120px;
-}
+
 .host-card{
     width: 75%;
     max-width: 1200px;
@@ -446,7 +441,6 @@ footer{
 }
 
 .footer-container p{
-     
     text-align: center;
 }
 
