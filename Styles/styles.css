@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.hidden{
+    display: none;
+}
+
 /* shared style */
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -14,6 +18,60 @@
 
 html{
     color: white;
+}
+
+p{
+    color: rgb(211, 209, 209)
+}
+
+@keyframes endless {
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 1.10;
+    }
+}
+
+.nav-btn:hover, .primary-btn:hover, .secondary-btn:hover{
+    color: #f0cd09;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #FB09B4;
+}
+
+
+/* navbar style  */
+
+header {
+    background-color: #1A0B2E;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo span{
+    font-style: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
 }
 
 .nav-btn{
@@ -32,35 +90,6 @@ html{
     color: white;
     cursor: pointer;
     box-shadow: 0 4px 4px 0 #00000054;
-}
-
-/* navbar style  */
-
-header {
-    background-color: #1A0B2E;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-menu{
-    display: flex;
-    list-style: none;
-    gap: 32px;
-}
-
-.nav-menu a{
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-    align-items: center;
 }
 
 #hamburger{
@@ -86,6 +115,7 @@ nav {
     text-align: center;
 }
 
+
 .circle{
     margin: 0 auto;
     padding-top: 100px;
@@ -97,19 +127,22 @@ nav {
 
 .microphone{
     position: absolute;
+    animation: endless 0.8s ease-in-out 0.5s infinite alternate;
 }
 
-/* #badge{
+#badge{
     background-color: #00FF88;
     padding: 16px 8px;
+    width: 75px;
     border-radius: 1000px;
     font-weight: 600;
     font-size: 18px;
     color: #1A0B2E;
-    position: relative;
-    margin-left: 877px;
-    margin-top: 113px;
-} */
+    position: absolute;
+    margin: -350px 0 0 80px;
+    font-size: 18px;
+    box-shadow: 0 3px 27px 0 #00ff8891;    
+}
 
 .banner-content{
     margin-top: 40px;
@@ -160,6 +193,9 @@ nav {
     border: 1px solid #00ff88;
     border-radius: 10000px;
     color: #00FF88;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 /* about section  */
@@ -288,6 +324,7 @@ nav {
     border: none;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    position: relative;
 }
 
 .episodes-card h4{
@@ -372,17 +409,19 @@ footer{
     position: relative;
 }
 
-
-.footer-container{    
-    justify-content: space-between;
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    position: relative;
 }
 
-.footer-logo{
+
+.footer-logo img{
     margin: 0 auto;
     padding-top: 120px;
-    
+    width: 410px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -407,7 +446,7 @@ footer{
 }
 
 .footer-container p{
-    
+     
     text-align: center;
 }
 
@@ -418,7 +457,8 @@ footer{
 
 @media screen and (max-width: 576px) {
     nav {
-    max-width: 400px;
+    width: 95%;
+    padding-left: 10px;
     }
 
     #hamburger{
@@ -429,6 +469,10 @@ footer{
         display: none;
     }
 
+    #banner{
+        background-image: url(../assets/moblie_banner.png);
+    }
+
     .banner-container{
         width: 400px;
     }
@@ -436,4 +480,48 @@ footer{
         width: 200PX;
         
     }
+
+    .about-content{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    }
+    .choose-card, .episodes-card{
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    #host{
+        width: 100%;
+    }
+     .host-card{
+        flex-direction: column;
+        width: 95%;
+     }
+
+     .host-content{
+        text-align: center;
+     }
+
+     .host-content .icons{
+        justify-content: center;
+     }
+
+    .long-layout, .wide-layout, .normal-layout{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    footer{
+        background-image: url(../assets/Footer.png);
+    }
+
+    .footer-icons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
